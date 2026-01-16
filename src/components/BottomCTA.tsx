@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import {Sparkles, Shield, Zap, Cloud, CheckCircle, ArrowRight, Rocket } from "lucide-react";
+import {Sparkles, CheckCircle, ArrowRight, Rocket } from "lucide-react";
 
 type CtaSectionProps = {
   onPrimaryClick?: () => void;
@@ -40,23 +40,23 @@ const BottomCta: React.FC<CtaSectionProps> = () => {
     return () => observer.disconnect();
   }, []);
 
-  const features = [
-    {
-      icon: <Shield className="w-5 h-5" />,
-      text: "Seguridad de nivel empresarial",
-      color: "from-emerald-500 to-green-400"
-    },
-    {
-      icon: <Zap className="w-5 h-5" />,
-      text: "Configuración en minutos",
-      color: "from-amber-500 to-orange-400"
-    },
-    {
-      icon: <Cloud className="w-5 h-5" />,
-      text: "Multi-cloud integrado",
-      color: "from-blue-500 to-cyan-400"
-    }
-  ];
+//   const features = [
+//     {
+//       icon: <Shield className="w-5 h-5" />,
+//       text: "Seguridad de nivel empresarial",
+//       color: "from-emerald-500 to-green-400"
+//     },
+//     {
+//       icon: <Zap className="w-5 h-5" />,
+//       text: "Configuración en minutos",
+//       color: "from-amber-500 to-orange-400"
+//     },
+//     {
+//       icon: <Cloud className="w-5 h-5" />,
+//       text: "Multi-cloud integrado",
+//       color: "from-blue-500 to-cyan-400"
+//     }
+//   ];
 
   const benefits = [
     "Sin tarjeta de crédito",
